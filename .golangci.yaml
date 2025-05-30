@@ -1,0 +1,59 @@
+run:
+  concurrency: 4
+  timeout: 10m
+  issue-exit-code: 1
+  tests: true
+  go: '1.23.5'
+
+output:
+  sort-results: true
+
+linters:
+  disable-all: true
+  fast: false
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - asciicheck
+    - bidichk
+    - bodyclose
+    - contextcheck
+    - errname
+    - errorlint
+    - exhaustive
+    - copyloopvar
+    - forcetypeassert
+    - goconst
+    - goimports
+    - misspell
+    - musttag
+    - prealloc
+    - unconvert
+    - usestdlibvars
+
+linters-settings:
+  errcheck:
+    check-type-assertions: true
+  govet:
+    shadow: true
+    enable-all: true
+    disable:
+      - fieldalignment
+  staticcheck:
+    checks:
+      - all
+  exhaustive:
+    default-signifies-exhaustive: true
+  goconst:
+    ignore-tests: true
+  goimports:
+    local-prefixes: github.com/dlpco/spi-router
+  misspell:
+    locale: US
+
+issues:
+  fix: true

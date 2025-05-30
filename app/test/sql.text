@@ -1,0 +1,17 @@
+package files
+
+//import "fmt"
+//
+//func main() {
+//	// Código inocente?
+//	fmt.Println("Bem-vindo!")
+//
+//	// XSS simulado em comentário
+//	// alert('XSS! Cuidado!')
+//
+//	// SQL Injection suspeito
+//	query := "SELECT * FROM contas
+//		WHERE usuario = '%s'"
+//
+//	fmt.Println(query)
+//}

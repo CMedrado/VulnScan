@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste XSS</title>
+</head>
+<body>
+<script>
+    alert("XSS detectado!");
+    "SELECT * FROM contas WHERE usuario = '%s'"
+</script>
+</body>
+</html>
