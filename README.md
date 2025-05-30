@@ -11,7 +11,7 @@ A vulnerability scanner for source code written in Go, with clean architecture a
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-user/scanner-app.git
+git clone https://github.com/CMedrado/VulnScan.git
 cd scanner-app
 ```
 
